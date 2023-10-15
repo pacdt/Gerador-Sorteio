@@ -53,6 +53,14 @@ nav ul{
     justify-content: space-between;
     gap: 25px;
 }
+nav ul li{
+    cursor: pointer;
+    font-weight: 700;
+    padding: 5px;
+}
+nav ul li:hover{
+    border-bottom: 1px solid #eb2d2d;
+}
 
 /* CORPO */
 
