@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./src/style.css">
     <title>Gerador de Sorteios</title>
 </head>
-<body id="bg-dark">
+<body id="bg-light">
     <header>
-        <img src="./src/img/dark.svg" alt="Botão de seleção de tema">
+        <img src="./src/img/theme-mode.png" alt="Botão de seleção de tema">
         <nav>
             <ul>
                 <li>Loteria</li>
@@ -16,26 +16,31 @@
             </ul>
         </nav>
     </header>
-    <div id="main">
-        <img src="" alt="">
+    <div class="main">
+        <img src="./src/img/logo.svg" alt="Logo">
+
         <section>
             <div id="configs">
-                <h2>Sortear</h2>
-                <input type="number" name="" id="">
-                <h2>número, entre</h2>
-                <input type="number" name="" id="">
-                <h2>e</h2>
-                <input type="number" name="" id="">
+                <h2>Sortear </h2>
+                <input type="number" name="" id="qnt" placeholder="1">
+                <h2> número, entre </h2>
+                <input type="number" name="" id="min" placeholder="0">
+                <h2> e </h2>
+                <input type="number" name="" id="max" placeholder="100">
             </div>
-            <section>
+
+            <section id="options">
                 <h4>Opções</h4>
-                <input type="checkbox" name="" id="ordenado">
-                <label for="ordenado">Mostrar em ordem</label>
-                <input type="checkbox" name="" id="no-repeat">
-                <label for="ordenado">Não repetir números</label>
+                <div>
+                    <input type="checkbox" name="" id="ordenado">
+                    <label for="ordenado">Mostrar em ordem</label>
+                    <input type="checkbox" name="" id="no-repeat">
+                    <label for="ordenado">Não repetir números</label>
+                </div>
             </section>
-            <button id="btn-sortear">Sortear</button>
+
         </section>
+        <button id="btn-sortear">Sortear</button>
     </div>
 
 <script src="./src/script.js"></script>
