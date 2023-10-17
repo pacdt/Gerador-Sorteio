@@ -8,3 +8,10 @@ function changeTheme(){
         themeBtn.id = "bg-light"
     }
 }
+
+//Mostrar/ocultar resultado
+const btnSorteio = document.querySelector("#btn-sortear")
+
+function sorteio(){
+    
+}

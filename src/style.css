@@ -127,15 +127,46 @@ input:focus{
     align-items: center;
 }
 
-#btn-sortear{
+#btn-sortear, .btn{
     font-size: 26px;
     font-weight: 500;
+    color: #fff;
+    
     padding: 10px 20px;
 
     border: none;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background-color: #eb2d2d;
 }
-#btn-sortear:hover{
+#btn-sortear:hover, .btn:hover{
     cursor: pointer;
+}
+#results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result-number{
+    background-color: red;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+#show{
+    display: none;
 }

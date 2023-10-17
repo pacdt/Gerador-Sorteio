@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./src/style.css">
     <title>Gerador de Sorteios</title>
 </head>
-<body id="bg-light">
+<body id="bg-dark">
     <header>
         <img src="./src/img/theme-mode.png" onclick="changeTheme()" alt="Botão de seleção de tema">
         <nav>
@@ -16,7 +16,8 @@
             </ul>
         </nav>
     </header>
-    <div class="main">
+
+    <div class="main" id="show">
         <img src="./src/img/logo.svg" alt="Logo">
 
         <section>
@@ -35,12 +36,34 @@
                     <input type="checkbox" name="" id="ordenado">
                     <label for="ordenado">Mostrar em ordem</label>
                     <input type="checkbox" name="" id="no-repeat">
-                    <label for="ordenado">Não repetir números</label>
+                    <label for="no-repeat">Não repetir números</label>
                 </div>
             </section>
 
         </section>
         <button id="btn-sortear">Sortear</button>
+    </div>
+
+
+
+    <div class="resultado-sorteio main">
+        <img src="./src/img/logo.svg" alt="Logo">
+
+        <section>
+            <div id="results">
+                <h2>Resultado do Sorteio</h2>
+                <br>
+                <div class="result-number">
+                    <h2>1</h2>
+                </div>
+            </div>
+
+        </section>
+        <div class="btn-div">
+            <button class="btn">Novo Número</button>
+            <button class="btn">Outro Sem Repetir</button>
+            <button class="btn">Novo Sorteio</button>
+        </div>
     </div>
 
 <script src="./src/script.js"></script>
